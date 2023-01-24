@@ -1,0 +1,81 @@
+.container .btn {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  align-items: center;
+  padding: 20px;
+  background-color: rgb(211, 221, 217);
+  box-shadow: 0 6px 18px -9px rgba(91, 88, 88, 0.75);
+}
+/*search bar style  */
+#search {
+  padding: 15px;
+  width: 50%;
+
+  background-color: rgb(237, 237, 169) !important;
+}
+#search:hover {
+  background-color: rgb(120, 147, 170);
+  transform: translateX(5px);
+}
+
+/* the selected item refresh button style */
+
+.button {
+  padding: 15px;
+  background-color: rgb(133, 127, 127);
+}
+.button:hover {
+  color: burlywood;
+  background-color: rgb(55, 76, 69);
+  transform: translateX(5px);
+}
+
+.container > .mapContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  align-items: center !important;
+  padding: 10px;
+  background: rgb(245, 247, 247);
+}
+
+/* using grid css  */
+/* large screens */
+@media (min-width: 1200px) {
+  .container > .mapContainer {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* medium screens */
+@media (min-width: 992px) and (max-width: 1199) {
+  .container > .mapContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* small screens */
+@media (max-width: 780px) {
+  .container > .mapContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* sub container style */
+.divWrapper {
+  background-color: rgb(198, 195, 195);
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 6px 18px -9px rgba(91, 88, 88, 0.75);
+  /* transition: transform 0.1s ease-in; */
+  /* transform:translateX(-5px) */
+}
+.divWrapper:hover {
+  transform: translateX(-8px);
+}
+
+.divWrapper > ul > li {
+  list-style-type: none;
+}
